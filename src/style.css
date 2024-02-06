@@ -4,12 +4,12 @@
   padding: 0;
   background-color: #412f26;
 }
-.section {
+
+section {
   display: block;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 25px;
-  padding: 0;
   border-radius: 8px;
   background-color: transparent;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@
 }
 .text-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 header {
@@ -139,8 +139,9 @@ p {
 }
 
 .section-text {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  justify-content: center;
+  margin: 0 250px auto;
 }
 .number {
   margin-top: -5%;
@@ -148,13 +149,21 @@ p {
 }
 .email {
   color: black;
+  font-size: smaller;
+  font-weight: bolder;
   transition: all;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 .email:hover {
   background-color: #a3966a;
 }
+.number-1 {
+  font-weight: bolder;
+}
 .number-1:hover {
   background-color: #a3966a;
   border: none;
-  transition: all 200ms;
+  transition: ease-in-out 200ms;
 }
