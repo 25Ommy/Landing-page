@@ -2,7 +2,15 @@
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #412f26;
+}
+body {
+  background: rgb(232, 129, 19);
+  background: linear-gradient(
+    90deg,
+    rgba(232, 129, 19, 1) 0%,
+    #6a4d04 0%,
+    rgba(232, 169, 9, 1) 100%
+  );
 }
 
 section {
@@ -33,6 +41,11 @@ section {
   margin-top: 30px;
   border-radius: 100px;
 }
+.image-align {
+  display: block;
+  margin: 50% 0 50% -30%;
+  border-radius: 60%;
+}
 .text-section {
   display: flex;
   justify-content: space-between;
@@ -40,12 +53,15 @@ section {
 
 header {
   color: #f0daae;
-  background-color: #412f26;
+  background-color: #a08905;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
-
+.head {
+  display: flex;
+  justify-content: right;
+}
 .contact {
   position: relative;
   overflow: hidden;
@@ -73,7 +89,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f0daae;
+  background-color: rgba(232, 169, 9, 1);
   min-width: 160px;
 
   z-index: 1;
@@ -88,7 +104,7 @@ header {
   text-align: left;
 }
 .dropdown-content a:hover {
-  background-color: #a3966a;
+  background-color: #e5c55b;
   min-width: 160px;
 }
 .dropdown:hover .dropdown-content {
@@ -106,15 +122,7 @@ footer {
 .space {
   background-color: transparent;
 }
-#spaces img {
-  margin-top: 25px;
-  width: 15%;
-  aspect-ratio: 3/2;
-  object-fit: contain;
 
-  display: flex;
-  justify-content: space-around;
-}
 #space {
   display: flex;
   justify-content: space-around;
@@ -128,11 +136,10 @@ a {
   color: whitesmoke;
   text-decoration: none;
 }
-div.item {
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  width: 120px;
+.item {
+  display: block;
+  margin: 0 auto;
+  border-radius: 60%;
 }
 .caption {
   display: block;
@@ -143,31 +150,28 @@ p {
 }
 
 .section-text {
-  display: block;
-  justify-content: center;
-  margin: 0 250px auto;
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
+
 .number {
   margin-top: -5%;
   width: 30%;
 }
 .email {
-  color: black;
-  font-size: smaller;
-  font-weight: bolder;
-  transition: all;
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
+  color: #000;
 }
 .email:hover {
-  background-color: #a3966a;
+  background-color: #999e97;
+  transition: ease-in-out 200ms;
 }
-.number-1 {
-  font-weight: bolder;
+.button {
+  background-color: #a08905;
+  border-color: #a08905;
 }
-.number-1:hover {
-  background-color: #a3966a;
+.button:hover {
+  background-color: #999e97;
   border: none;
   transition: ease-in-out 200ms;
 }
